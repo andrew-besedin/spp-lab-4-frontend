@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Code.online" />
+        <title>Code.online</title>
+        <link rel="stylesheet" href="/css/theme.css" />
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/ui.css" />
+        <link rel="stylesheet" href="/css/code.css" />
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.52.2/min/vs/loader.js"></script>
+        <script type="module" src="/js/code.js"></script>
+    </head>
+    <body>
+        <div class="body__wrapper">
+            <header class="header">
+                <div class="header__panel">
+                    <a href="/" class="logo">
+                        <img src="/assets/images/logo.svg" alt="Code.online" />
+                    </a>
+                    <select id="lang-select" class="select" disabled>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                    <div class="header__actions">
+                        <button id="invite-button" class="btn" type="button">Invite</button>
+                        <button id="run-button" class="btn" type="button">Run JS</button>
+                    </div>
+                </div>
+                <button id="users-button" class="btn" type="button">Users online</button>
+            </header>
+            <main class="main">
+                <div id="editor" class="code__editor"></div>
+            </main>
+        </div>
+
+        <div id="invite-popup" class="popover header__invite-popup" hidden>
+            <div class="field">
+                <label for="invite-code">Code</label>
+                <input id="invite-code" class="input" readonly />
+            </div>
+            <div class="field">
+                <label for="invite-link">Link</label>
+                <input id="invite-link" class="input" readonly />
+            </div>
+        </div>
+
+        <div id="users-popup" class="popover header__users-popup" hidden>
+            <p class="header__users-popup__no-users">Loading...</p>
+        </div>
+
+        <template id="user-template">
+            <div class="header__users-popup__user">
+                <img src="/assets/images/user.svg" alt="" />
+                <p></p>
+            </div>
+        </template>
+    </body>
+</html>

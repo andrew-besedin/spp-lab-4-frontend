@@ -1,0 +1,45 @@
+.home__main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__main .home__logo {
+    scale: 1.5;
+}
+
+.home__main .home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.home__main .home__content > p {
+    max-width: 600px;
+    text-align: center;
+    color: var(--font-transparent);
+}
+
+.home__main .home__content > p > span {
+    font-style: italic;
+    color: var(--font-color);
+}
+
+.home__main .home__content-buttons {
+    width: 300px;
+    display: flex;
+    gap: 10px;
+}
+
+.home__main .home__content-buttons > * {
+    width: 100%;
+}
+
+.home__main .home__connect-block {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}

@@ -1,0 +1,61 @@
+.btn {
+    padding: 8px 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: transparent;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus-visible {
+    border-color: var(--accent-color);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field label {
+    font-size: 12px;
+    color: var(--font-transparent);
+}
+
+.input, .select {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border-color);
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.input:focus, .select:focus-visible {
+    border-bottom-color: var(--accent-color);
+}
+
+.select {
+    width: 150px;
+    cursor: pointer;
+}
+
+.select:disabled {
+    color: var(--font-transparent);
+    cursor: default;
+}
+
+.select option {
+    background-color: var(--paper-color);
+}
+
+.popover {
+    position: absolute;
+    z-index: 5;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--paper-color);
+    transition: none;
+}
+
+.logo {
+    display: flex;
+}

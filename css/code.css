@@ -1,0 +1,55 @@
+.header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header__panel {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header .header__actions {
+    display: flex;
+    gap: 10px;
+}
+
+.header__invite-popup, .header__users-popup {
+    min-width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header__users-popup__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__users-popup__no-users {
+    color: var(--font-transparent);
+}
+
+.body__wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    min-height: 0;
+}
+
+.main .code__editor {
+    height: 100%;
+    transition: none;
+}
+
+.main .code__editor * {
+    transition: none;
+}

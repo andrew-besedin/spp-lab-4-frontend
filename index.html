@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Code.online" />
+        <title>Code.online</title>
+        <link rel="stylesheet" href="/css/theme.css" />
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/ui.css" />
+        <link rel="stylesheet" href="/css/home.css" />
+        <script type="module" src="/js/home.js"></script>
+    </head>
+    <body>
+        <main class="home__main">
+            <div class="home__content">
+                <a href="/" class="logo home__logo">
+                    <img src="/assets/images/logo.svg" alt="Code.online" />
+                </a>
+
+                <p id="intro-text">
+                    Gone are the days of traditional, nerve-wracking code interviews conducted in person or over clunky video conferencing tools. Enter Code.online, the cutting-edge web application that is transforming the landscape of live code interviews. <br /> Say goodbye to the stress and hassle of traditional interviews and embrace the future of tech recruitment with <span>// Code.online!</span>
+                </p>
+                <div id="intro-buttons" class="home__content-buttons">
+                    <button id="create-room-button" class="btn" type="button">Create Room</button>
+                    <button id="show-connect-button" class="btn" type="button">Connect Room</button>
+                </div>
+                <p id="create-error"></p>
+
+                <form id="connect-form" class="home__connect-block" hidden>
+                    <div class="field">
+                        <label for="room-code">Room Code</label>
+                        <input id="room-code" class="input" name="hash" autocomplete="off" required />
+                    </div>
+                    <button id="connect-button" class="btn" type="submit">Connect</button>
+                    <button id="back-button" class="btn" type="button">Back</button>
+                </form>
+                <p id="connect-error" hidden></p>
+            </div>
+        </main>
+    </body>
+</html>
