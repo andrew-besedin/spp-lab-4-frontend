@@ -51,5 +51,8 @@
 }
 
 .main .code__editor * {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
     transition: none;
 }
